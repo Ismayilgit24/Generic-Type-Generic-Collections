@@ -1,0 +1,161 @@
+C# Generic & Non-generic Collections
+C# includes specialized classes that store series of values or objects are called collections.
+
+There are two types of collections available in C#: non-generic collections and generic collections.
+
+The System.Collections namespace contains the non-generic collection types and System.Collections.Generic namespace includes generic collection types.
+
+In most cases, it is recommended to use the generic collections because they perform faster than non-generic collections and also minimize exceptions by giving compile-time errors.
+
+C# includes the following generic collection classes in the System.Collections.Generic namespace.
+
+Generic colletions : List<T>, Dictionary<TKey, TValue>, Queue<T>, Stack<T>, HashSet<T>, LinkedList<T>, SortedList<TKey, TValue>, SortedDictionary<TKey, TValue>.
+
+Non Generic collections : ArrayList, Hashtable, SortedList, Stack, Queue.
+
+                                                              LinkedList and HashTable :
+
+---
+
+LinkedList
+
+A `LinkedList` is a collection that consists of nodes, where each node contains a value and a reference to the next node. This structure allows for efficient insertion and deletion operations since these can be performed without reorganizing the entire structure, unlike arrays.
+
+Advantages:
+- **Dynamic Size**: The size of a `LinkedList` can grow and shrink dynamically as needed, unlike arrays with a fixed size.
+- **Efficient Insertions/Deletions**: Adding or removing elements is efficient since it only requires updating the pointers of the nodes involved.
+- **No Memory Waste**: Memory is allocated only as needed, minimizing unused space.
+
+Disadvantages:
+- **Higher Memory Overhead**: Each node requires extra memory for the pointer/reference to the next node, which can lead to higher memory usage compared to arrays.
+- **Slower Access**: Accessing elements by index is slower than arrays since it requires traversing the list from the beginning.
+
+---
+
+Hashtable
+
+A `Hashtable` is a collection that stores key-value pairs, where each key is unique. It uses a hashing algorithm to compute an index for storing each value, allowing for fast retrieval based on keys.
+
+Advantages:
+- **Fast Lookups**: Retrieving values based on their keys is very fast due to hashing, often O(1) time complexity on average.
+- **Dynamic Size**: Similar to `LinkedList`, a `Hashtable` can grow in size as needed, accommodating more entries.
+
+Disadvantages:
+- **Non-ordered**: The elements in a `Hashtable` do not maintain any specific order, unlike lists.
+- **Collisions**: If two keys hash to the same index, it can lead to collisions, which can slow down performance if not handled well.
+
+---
+
+This information summarizes the characteristics, advantages, and disadvantages of both **LinkedList** and **Hashtable** collections.
+LinkedList Methods
+
+The `LinkedList` collection has many useful methods. The main methods are:
+
+1. **AddFirst(T value)**: Adds a new element to the beginning of the list.
+   ```csharp
+   linkedList.AddFirst("Alice");
+   ```
+
+2. **AddLast(T value)**: Adds a new element to the end of the list.
+   ```csharp
+   linkedList.AddLast("Bob");
+   ```
+
+3. **AddAfter(LinkedListNode<T> node, T value)**: Adds a new element after a specified node in the list.
+   ```csharp
+   var node = linkedList.Find("Alice");
+   linkedList.AddAfter(node, "David");
+   ```
+
+4. **AddBefore(LinkedListNode<T> node, T value)**: Adds a new element before a specified node in the list.
+   ```csharp
+   linkedList.AddBefore(node, "Eve");
+   ```
+
+5. **Remove(T value)**: Removes the specified element from the list. If the element is not found, no changes are made.
+   ```csharp
+   linkedList.Remove("Bob");
+   ```
+
+6. **RemoveFirst()**: Removes the first element from the list.
+   ```csharp
+   linkedList.RemoveFirst();
+   ```
+
+7. **RemoveLast()**: Removes the last element from the list.
+   ```csharp
+   linkedList.RemoveLast();
+   ```
+
+8. **Find(T value)**: Searches for the specified element in the list and returns its node if found. If not found, it returns `null`.
+   ```csharp
+   var node = linkedList.Find("David");
+   ```
+
+9. **Contains(T value)**: Checks if the specified element exists in the list and returns `true` or `false`.
+   ```csharp
+   bool exists = linkedList.Contains("Alice");
+   ```
+
+10. **Clear()**: Clears all elements from the list.
+    ```csharp
+    linkedList.Clear();
+    ```
+
+---
+
+### Hashtable Methods
+
+The `Hashtable` collection is also equipped with various methods that allow working with key-value pairs. The main methods are:
+
+1. **Add(object key, object value)**: Adds a new key-value pair. If the key already exists, it throws an `ArgumentException`.
+   ```csharp
+   hashtable.Add("Alice", 85);
+   ```
+
+2. **Remove(object key)**: Removes the value associated with the specified key. If the key does not exist, no changes are made.
+   ```csharp
+   hashtable.Remove("Alice");
+   ```
+
+3. **ContainsKey(object key)**: Checks whether the specified key exists in the `Hashtable`. Returns `true` or `false`.
+   ```csharp
+   bool exists = hashtable.ContainsKey("Bob");
+   ```
+
+4. **ContainsValue(object value)**: Checks whether the specified value exists in the `Hashtable`. Returns `true` or `false`.
+   ```csharp
+   bool hasValue = hashtable.ContainsValue(90);
+   ```
+
+5. **Clear()**: Clears all key-value pairs in the `Hashtable`.
+   ```csharp
+   hashtable.Clear();
+   ```
+
+6. **Keys**: Returns all the keys.
+   ```csharp
+   ICollection keys = hashtable.Keys;
+   foreach (var key in keys)
+   {
+       Console.WriteLine(key);
+   }
+   ```
+
+7. **Values**: Returns all the values.
+   ```csharp
+   ICollection values = hashtable.Values;
+   foreach (var value in values)
+   {
+       Console.WriteLine(value);
+   }
+   ```
+
+8. **Count**: Returns the number of key-value pairs in the `Hashtable`.
+   ```csharp
+   int count = hashtable.Count;
+   ```
+
+---
+
+These methods enable efficient operations with the **LinkedList** and **Hashtable** collections.

@@ -1,0 +1,14 @@
+D:\CodeAcademy\Generic Type, Generic Collections\Generic Type, Generic Collections\bin\Debug\net6.0\Generic Type, Generic Collections.exe
+D:\CodeAcademy\Generic Type, Generic Collections\Generic Type, Generic Collections\bin\Debug\net6.0\Generic Type, Generic Collections.deps.json
+D:\CodeAcademy\Generic Type, Generic Collections\Generic Type, Generic Collections\bin\Debug\net6.0\Generic Type, Generic Collections.runtimeconfig.json
+D:\CodeAcademy\Generic Type, Generic Collections\Generic Type, Generic Collections\bin\Debug\net6.0\Generic Type, Generic Collections.dll
+D:\CodeAcademy\Generic Type, Generic Collections\Generic Type, Generic Collections\bin\Debug\net6.0\Generic Type, Generic Collections.pdb
+D:\CodeAcademy\Generic Type, Generic Collections\Generic Type, Generic Collections\obj\Debug\net6.0\Generic Type, Generic Collections.GeneratedMSBuildEditorConfig.editorconfig
+D:\CodeAcademy\Generic Type, Generic Collections\Generic Type, Generic Collections\obj\Debug\net6.0\Generic Type, Generic Collections.AssemblyInfoInputs.cache
+D:\CodeAcademy\Generic Type, Generic Collections\Generic Type, Generic Collections\obj\Debug\net6.0\Generic Type, Generic Collections.AssemblyInfo.cs
+D:\CodeAcademy\Generic Type, Generic Collections\Generic Type, Generic Collections\obj\Debug\net6.0\Generic Type, Generic Collections.csproj.CoreCompileInputs.cache
+D:\CodeAcademy\Generic Type, Generic Collections\Generic Type, Generic Collections\obj\Debug\net6.0\Generic Type, Generic Collections.dll
+D:\CodeAcademy\Generic Type, Generic Collections\Generic Type, Generic Collections\obj\Debug\net6.0\refint\Generic Type, Generic Collections.dll
+D:\CodeAcademy\Generic Type, Generic Collections\Generic Type, Generic Collections\obj\Debug\net6.0\Generic Type, Generic Collections.pdb
+D:\CodeAcademy\Generic Type, Generic Collections\Generic Type, Generic Collections\obj\Debug\net6.0\Generic Type, Generic Collections.genruntimeconfig.cache
+D:\CodeAcademy\Generic Type, Generic Collections\Generic Type, Generic Collections\obj\Debug\net6.0\ref\Generic Type, Generic Collections.dll
